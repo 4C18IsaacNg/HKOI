@@ -1,16 +1,20 @@
 from math import sqrt
 
-a , b , c = map(int,(input().split()))
+a , b , c = map(int,(input().split()))     #input a, b, c on the same line
 d = b*b-4*a*c
 if d < 0 :
    print('None')
 elif d == 0 :
   r = (-b+(sqrt(d)))/(2*a)
-  print(f'{r:.3f}')
+  print(f'{r:.3f}')                        #print r (corr. to 3 d.p.)
 elif d > 0 :
   r1 = (-b+(sqrt(d)))/(2*a) 
   r2 = (-b-(sqrt(d)))/(2*a)
   if r1 < r2 :
-    print(f'{r1:.3f} {r2:.3f}')
+    print(f'{r1:.3f} {r2:.3f}')            #print r1 & r2 (corr. to 3 d.p.) with a blank between them 
   else:
-    print(f'{r2:.3f} {r1:.3f}')
+    print(f'{r2:.3f} {r1:.3f}')            #print r2 & r1 (corr. to 3 d.p.) with a blank between them
+
+#Skill: print(f'{}')
+#            (f'{[]:.nf}')
+#            (f'{} {}')
