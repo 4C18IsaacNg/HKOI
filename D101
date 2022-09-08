@@ -1,6 +1,9 @@
 A = input()
-if len(A)==8 :
-   if A[0] == '2' or A[0] == '3':
-     print('Fixed')
-   if A[0] == '5' or A[0] == '6' or A[0] == '9':
+if len(A)==8 :                                    #if the length of string A = 8
+   if A[0] == '2' or A[0] == '3':                 #if the 1st character of string A is 2 or 3
+     print('Fixed')                               
+   if A[0] == '5' or A[0] == '6' or A[0] == '9':  #if the 1st character of string A is 5 or 6 or 9
      print('Mobile')
+   
+#Skill: len(A)
+#       A[]  
