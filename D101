@@ -1,0 +1,6 @@
+A = input()
+if len(A)==8 :
+   if A[0] == '2' or A[0] == '3':
+     print('Fixed')
+   if A[0] == '5' or A[0] == '6' or A[0] == '9':
+     print('Mobile')
