@@ -1,4 +1,4 @@
-a, b = input().split()
-a=int(a)
-b=int(b)
-print(a+b)
+a, b = input().split() #input two data (a & b) in the same line
+a=int(a)               #make a an integer
+b=int(b)               #make b an integer
+print(a+b)             #add a & b togther and print it out
