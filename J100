@@ -1,13 +1,20 @@
 N = int(input())
 k = 1
-for i in range(N):  
-    for j in range(i+1):
-        print(k, end=' ')
+for i in range(N):            #i from 0 to N  
+    for j in range(i+1):      #j from 0 to i    
+        print(k, end=' ')     #print k follow up by a blank
         k = k + 1
     print() 
 
-for n in range(N-2,-1,-1):
-    for m in range(n+1):        
+for n in range(N-2,-1,-1):     #n from N-2 to 0 and -1 every time
+    for m in range(n+1):       #m from 0 to n     
         print(k, end=' ')
         k = k + 1 
-    print()    
+    print()   
+
+#Skill: range()
+#       print([], end=' ')  
+#       list() ---> eg.   N = range(5)    or  N = list(range(5))
+#                         print(list(N))      print(N)
+#                         
+#                         Output: [0, 1, 2, 3, 4]   
