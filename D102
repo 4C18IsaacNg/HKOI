@@ -1,0 +1,6 @@
+from math import ceil
+
+N = input()
+n = float(N[1:])
+b = ceil(n/2*10)/10 
+print(f'${b:.1f}')
