@@ -1,0 +1,32 @@
+a , s , b , x , c = input().split()
+a = int(a)
+b = int(b)
+c = int(c)
+ans = 0
+if x == '*':
+   ans = b*c
+   if s == '+':
+      ans = a + ans
+   if s == '-':
+      ans = a - ans
+   if s == '*':
+      ans = a * ans   
+elif s == '+':
+   ans = a + b
+   if x == '+':
+      ans = ans + c
+   if x == '-':
+      ans = ans - c
+elif s == '-':
+   ans = a - b
+   if x == '+':
+      ans = ans + c
+   if x == '-':
+      ans = ans - c
+elif s == '*':
+   ans = a * b   
+   if x == '+':
+      ans = ans + c
+   if x == '-':
+      ans = ans - c
+print(ans)            
