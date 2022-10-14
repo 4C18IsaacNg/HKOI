@@ -1,0 +1,19 @@
+y1 , m1, d1 = map(int,input().split())
+y2 , m2, d2 = map(int,input().split())
+if y1 >= 1000 and y1 <= 9999 and y2 >= 1000 and y2 <= 9999 :
+    if y1 == y2 :
+        if m1 == m2:
+           if d1 < d2:
+              print('Before')
+           elif d1 > d2:
+              print('After')
+           else:
+              print('Same')
+        elif m1 < m2:
+            print('Before')
+        else:
+            print('After')
+    elif y1 > y2 : 
+        print('After')
+    else:
+        print('Before')
