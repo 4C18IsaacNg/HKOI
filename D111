@@ -1,0 +1,14 @@
+W, H = input().split()
+w = float(W)
+h = float(H)
+b = w/(h*h)
+if b < 18.5:
+    r = 'Underweight'
+elif b >= 18.5 and b < 23.0:
+    r = 'Normal' 
+elif b >= 23.0 and b < 25.0:
+    r = 'Overweight'    
+else:
+    r = 'Obese'    
+print(f'{b:.3f}')
+print(r)
