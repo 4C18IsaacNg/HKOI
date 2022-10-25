@@ -1,0 +1,7 @@
+import math
+a = float(input())
+b = float(input())
+c = float(input())
+if a >= 1 and b >= 1 and a <= 100 and b <= 100 and c >= 1 and c <= 179:
+   A = 0.5*a*b*(math.sin(math.radians(c)))
+   print(f'{A:.3f}')
